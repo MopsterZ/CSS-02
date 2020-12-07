@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image:url(../image/body_bg_en.png), url(../image/body_bg_stripe.png);
+	background-repeat: repeat-x, repeat;
+	/*font-family:"ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;*/
+}
+
+#container {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	position:relative;
+}
+
+header h1 {
+	text-align:center;
+}
+
+header nav a {
+	border: solid 2px #4a2b16;
+	padding: 5px 10px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 6px;
+	color: #4a2b16;
+	text-decoration: none;
+}
+
+header nav li:first-child a:before {
+	content: url(../image/ico_back.png);
+	margin-right: 5px;
+}
+
+header nav li:last-child a:after {
+	content: url(../image/ico_next.png);
+	margin-left: 5px;
+}
+
+header nav a:hover {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fff8f4+0,ffccaf+100 */
+background: #fff8f4; /* Old browsers */
+background: -moz-linear-gradient(top,  #fff8f4 0%, #ffccaf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fff8f4 0%,#ffccaf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #fff8f4 0%,#ffccaf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8f4', endColorstr='#ffccaf',GradientType=0 ); /* IE6-9 */
+}
+
+header li:first-child {
+	position:absolute;
+	bottom:10px;
+	left:0;
+}
+
+header li:last-child {
+	position:absolute;
+	bottom: 10px;
+	right: 0;
+}
+
+main {
+	border: solid 1px #4a2b16;
+	background-color: #fff;
+	background-image:url(../image/main_bg.png);
+	background-repeat: repeat-y;
+}
+
+aside#box-nav {
+	width: 196px; /* 200pxから左右のpaddingを引いた*/
+	border-left: solid 1px #4a2b16;
+	border-right: solid 1px #4a2b16;
+	border-bottom: solid 1px #4a2b16;
+	background-color:#fff3ef;
+	margin-left:42px;
+	padding: 22px 2px 10px;
+	border-radius: 0 0 6px 6px;
+	float:left;
+}
+
+aside#box-nav h2 {
+	background-color:#ff8664;
+	color:#fff;
+	font-size:14px;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+aside#box-nav h3 {
+	font-size:14px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+aside#box-nav h3:before {
+	content:url(../image/ico_nav_title.png);
+	margin-right:5px;
+}
+
+aside#box-nav ul {
+	background-color:#fff;
+	font-size:14px;
+	padding:10px;
+}
+
+aside#box-nav ul li {
+	border-bottom: dotted 1px #4a2b16;
+	padding-bottom:6px;
+	margin-bottom:6px;
+	padding-left:10px;
+}
+
+aside#box-nav ul li:last-child {
+	border-bottom:none;
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+aside#box-nav ul li a:before {
+	content:url(../image/ico_nav.png);
+	margin-right:5px;
+}
+
+aside#box-nav ul li a {
+	color:#000;
+	text-decoration: none;
+}
+
+aside#box-nav ul li a:hover {
+	color:#ff7800;
+}
+
+#box-contents {
+	width: 650px;
+	float:left;
+	margin-left:55px;
+	padding-top:22px;
+}
+
+main:after {
+	content: " ";
+	display: block;
+	clear:both;
+}
+
+#box-contents h2 {
+	font-size: 14px;
+	background-color:#ff8664;
+	background-image:url(../image/title_bg01.png), url(../image/title_bg02.png);
+	background-repeat: no-repeat;
+	background-position: left center, right center;
+	color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left: 15px;
+	margin-bottom:20px;
+}
+
+#box-contents .photo img {
+	border: solid 4px #fff;
+	box-shadow: 0 0 3px #000;
+}
+
+#box-contents #box-pickup li {
+	width:314px;
+}
+
+#box-contents #box-pickup ul {
+	list-style-type:none;
+}
+
+#box-contents #box-pickup ul:after {
+	content: " ";
+	display:block;
+	clear:both;
+}
+
+#box-contents #box-pickup h3 {
+	font-size:12px;
+	padding-top:10px;
+}
+
+#box-contents #box-pickup ul a {
+	color:#000;
+	margin-top:5px;
+	display:inline-block;
+}
+
+#box-contents #box-pickup ul li:first-child {
+	float: left;
+}
+
+#box-contents #box-pickup ul li:last-child {
+	float:right;
+}
+
+#box-contents #box-pickup .btn-list {
+	text-align:right;
+	margin-top:10px;
+	margin-bottom:30px;
+	font-size: 14px;
+}
+
+#box-contents #box-pickup .btn-list a {
+	text-decoration:none;
+	color:#ff8664;
+}
+
+#box-contents #box-pickup .btn-list a:before {
+	content:url(../image/ico_nav.png);
+	margin-right:5px;
+}
+
+#box-contents #box-recipe .left {
+	width:225px;
+	float:left
+}
+
+#box-contents #box-recipe .right {
+	width:400px;
+	float:right;
+}
+
+#box-contents #box-recipe:after {
+	content:" ";
+	display:block;
+	clear:both;
+}
+
+#box-contents #box-recipe h3 {
+	color:#ff8664;
+	font-size:14px;
+	border-bottom:dotted 1px #ff8664;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+
+#box-contents #box-recipe ul {
+	list-style-type:none;
+	font-size:14px;
+	line-height:150%;
+	margin-bottom:20px;
+}
+
+#box-contents #box-recipe ol {
+	list-style-position:inside;
+	line-height:150%;
+	font-size:14px;
+}
+
+#box-contents #box-recipe #recipe {
+	height:270px;
+	overflow:auto;
+}
+
+footer p {
+	text-align:center;
+	font-size:12px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
